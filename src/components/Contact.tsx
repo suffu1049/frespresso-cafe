@@ -137,7 +137,7 @@ export default function Contact() {
             className="rounded-2xl overflow-hidden shadow-lg border border-coffee/10 h-[320px] md:h-full min-h-[320px]"
           >
             <iframe
-              src="https://maps.google.com/maps?q=1008,%20Laddak,%20Vapi%20East,%20Sonorous,%20Vapi,%20Gujarat%20396191&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14959.899904853455!2d72.89596266738282!3d20.383921607223513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ce3260c32219%3A0x1da9ad6ce66122a4!2sFrespresso%20Cafe!5e0!3m2!1sen!2sus!4v1782144241906!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}

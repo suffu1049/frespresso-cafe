@@ -8,15 +8,15 @@ import { X } from "lucide-react";
 /* ───────── 8 cafe-themed Unsplash images ───────── */
 const images = [
   {
-    src: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEVnIv4Ds7KrA7eWWD5KsUXEQAxVpNQhlKFlRNsQBHoAL41LjnWmALHJ9Apq83e_OGr6W_WtHcQFzjOVWl2MvlPm9CJ9Yqb4NjxITHqu1BiCeUTWeesp63tfN9HOoM5pdM_uNvY=w189-h246-p-k-no",
+    src: "/coffee.jpg",
     alt: "Signature Frespresso Latte on table",
   },
   {
-    src: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEVnIv4Ds7KrA7eWWD5KsUXEQAxVpNQhlKFlRNsQBHoAL41LjnWmALHJ9Apq83e_OGr6W_WtHcQFzjOVWl2MvlPm9CJ9Yqb4NjxITHqu1BiCeUTWeesp63tfN9HOoM5pdM_uNvY=w189-h246-p-k-no",
+    src: "/mojito.jpg",
     alt: "Refreshing Blue and Green mojitos",
   },
   {
-    src: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEVnIv4Ds7KrA7eWWD5KsUXEQAxVpNQhlKFlRNsQBHoAL41LjnWmALHJ9Apq83e_OGr6W_WtHcQFzjOVWl2MvlPm9CJ9Yqb4NjxITHqu1BiCeUTWeesp63tfN9HOoM5pdM_uNvY=w189-h246-p-k-no",
+    src: "/coffee1.jpg",
     alt: "Beautifully crafted latte art close-up",
   },
   {
@@ -38,6 +38,10 @@ const images = [
   {
     src: "https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?q=80&w=765&auto=format&fit=crop",
     alt: "Birthday decoration at a cafe",
+  },
+  {
+    src: "/taco.jpg",
+    alt: "Beautifully crafted taco art close-up",
   },
 ];
 
