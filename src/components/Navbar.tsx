@@ -50,14 +50,17 @@ export default function Navbar() {
 
         {/* CTA + Mobile toggle */}
         <div className="flex items-center gap-4">
-          <a
-            href="#menu"
-            className="hidden md:inline-block bg-coffee text-cream text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-coffee/80 transition-all duration-300 shadow-lg shadow-coffee/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
-            aria-label="Order Now - View Menu"
+          <button
+            onClick={() => {
+              document
+                .getElementById("reservation")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="hidden md:inline-block bg-coffee text-cream text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-coffee/80 transition-all duration-300 shadow-lg shadow-coffee/20"
+            aria-label="Book Now - Reserve Table"
           >
-            Order Now
-          </a>
-
+            Book Now
+          </button>
           <button
             className="md:hidden text-cream p-1"
             onClick={() => setOpen(!open)}
@@ -91,13 +94,17 @@ export default function Navbar() {
                 </li>
               ))}
               <li className="mt-4">
-                <a
-                  href="#menu"
-                  onClick={() => setOpen(false)}
+                <button
+                  onClick={() => {
+                    setOpen(false);
+                    document
+                      .getElementById("reservation")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
                   className="inline-block bg-coffee text-cream font-semibold px-8 py-3 rounded-full hover:bg-coffee/80 transition-all duration-300 shadow-lg shadow-coffee/20"
                 >
-                  Order Now
-                </a>
+                  Book Now
+                </button>
               </li>
             </ul>
           </motion.div>
