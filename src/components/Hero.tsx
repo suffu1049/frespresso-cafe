@@ -94,12 +94,16 @@ export default function Hero() {
           >
             View Menu <ArrowRight size={18} />
           </a>
-          <a
-            href="#contact"
+          <button
+            onClick={() => {
+              document
+                .getElementById("reservation")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="inline-flex items-center gap-2 border-2 border-white/30 text-white font-medium px-7 py-3.5 rounded-full hover:bg-white/10 transition-all duration-300"
           >
             Visit Us
-          </a>
+          </button>
         </motion.div>
 
         {/* Info Badges */}
