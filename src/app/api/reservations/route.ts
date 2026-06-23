@@ -1,6 +1,16 @@
 import nodemailer from "nodemailer";
 import { NextRequest, NextResponse } from "next/server";
 
+type ReservationData = {
+  name: string;
+  phone: string;
+  email?: string;
+  guests?: number;
+  date: string;
+  time: string;
+  occasion?: string;
+  notes?: string;
+};
 // Email transporter configuration
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -11,7 +21,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Format reservation details for email
-function formatReservationEmail(data: any) {
+function formatReservationEmail(data: ReservationData) {
   return `
     <div style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
       <div style="background-color: white; padding: 30px; border-radius: 10px; max-width: 600px; margin: 0 auto;">
@@ -56,7 +66,7 @@ function formatReservationEmail(data: any) {
 }
 
 // Format customer confirmation email
-function formatConfirmationEmail(data: any) {
+function formatConfirmationEmail(data: ReservationData) {
   return `
     <div style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
       <div style="background-color: white; padding: 30px; border-radius: 10px; max-width: 600px; margin: 0 auto;">
