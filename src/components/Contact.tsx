@@ -9,6 +9,7 @@ const services = ["Dine In", "Takeaway", "No-Contact Delivery"];
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     phone: "",
     guests: "2",
     date: "",
@@ -41,10 +42,26 @@ export default function Contact() {
       return;
     }
 
-    // Simulate API request delay
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      const response = await fetch("/api/reservations", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit reservation");
+      }
+
+      setIsSubmitted(true);
+    } catch (err) {
+      setError("Failed to submit reservation. Please try again or contact us directly.");
+      console.error("Submission error:", err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -186,6 +203,7 @@ export default function Contact() {
                     setIsSubmitted(false);
                     setFormData({
                       name: "",
+                      email: "",
                       phone: "",
                       guests: "2",
                       date: "",
@@ -230,6 +248,21 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleInputChange}
                         placeholder="John Doe"
+                        className="w-full bg-white/5 border border-cream/10 rounded-xl px-4 py-3 text-cream placeholder-cream/30 focus:outline-none focus:border-gold/50 transition-all duration-300 text-sm"
+                      />
+                    </div>
+
+                    {/* Email */}
+                    <div>
+                      <label className="block text-xs font-semibold uppercase tracking-wider text-cream/60 mb-2">
+                        Email (Optional)
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        placeholder="your@email.com"
                         className="w-full bg-white/5 border border-cream/10 rounded-xl px-4 py-3 text-cream placeholder-cream/30 focus:outline-none focus:border-gold/50 transition-all duration-300 text-sm"
                       />
                     </div>
