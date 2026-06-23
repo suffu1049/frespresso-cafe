@@ -1,8 +1,8 @@
-# ☕ Cafe Sonorous — Frespresso Cafe Vapi
+# ☕ Frespresso Cafe — Frespresso Cafe Vapi
 
 A premium cafe website built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Swiper**.
 
-> **Live Demo:** [cafe-sonorous.vercel.app](https://cafe-sonorous.vercel.app)
+> **Live Demo:** [frespresso-cafe.vercel.app](https://frespresso-cafe.vercel.app)
 
 ---
 
@@ -61,8 +61,8 @@ src/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/cafe-sonorous.git
-cd cafe-sonorous
+git clone https://github.com/suffu1049/frespresso-cafe.git
+cd frespresso-cafe
 
 # 2. Install dependencies
 npm install
@@ -129,7 +129,7 @@ font-body     // Poppins
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/cafe-sonorous.git
+git remote add origin git clone https://github.com/suffu1049/frespresso-cafe.git
 git push -u origin main
 
 # 2. Import on Vercel

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://cafe-sonorous.vercel.app/sitemap.xml",
+    sitemap: "https://frespresso-cafe.vercel.app/sitemap.xml",
   };
 }

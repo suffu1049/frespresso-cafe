@@ -55,12 +55,13 @@ export default function Footer() {
                 <Globe size={18} />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center text-cream/60 hover:bg-gold hover:text-dark transition-all duration-300"
+                href="https://maps.google.com/?q=Frespresso+Cafe+Vapi"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Location"
-              >
-                <MapPin size={18} />
-              </a>
+>
+  <MapPin size={18} />
+</a>
             </div>
           </div>
         </div>

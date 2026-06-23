@@ -51,7 +51,7 @@ export const siteConfig: SiteConfig = {
   tagline: "Frespresso Cafe Vapi",
   description:
     "Premium cafe in Vapi serving coffee, shakes, sandwiches, tea, snacks and birthday celebration arrangements.",
-  url: "https://cafe-sonorous.vercel.app",
+  url: "https://frespresso-cafe.vercel.app",
   ogImage: "/og-image.jpg",
   address: "1008, Laddak, Vapi East, Sonorous, Vapi, Gujarat 396191",
   phone: "+91 98765 43210",

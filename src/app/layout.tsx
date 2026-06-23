@@ -6,8 +6,8 @@ import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
 import "./globals.css";
 
-const siteUrl = "https://cafe-sonorous.vercel.app";
-const siteName = "Frespresso Cafe | Vapi, Gujarat";
+const siteUrl = "https://frespresso-cafe.vercel.app";
+const siteName = "Frespresso Cafe | Vapi, Gujarat";   
 const description =
   "Premium cafe in Vapi serving coffee, shakes, sandwiches, tea, snacks and birthday celebration arrangements.";
 const keywords = [
@@ -65,9 +65,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
-  },
+  
   category: "cafe",
 };
 
